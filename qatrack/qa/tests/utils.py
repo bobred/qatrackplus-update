@@ -3,6 +3,9 @@ from django.contrib.auth.models import Group
 from django.contrib.contenttypes.models import ContentType
 from django.utils import timezone
 import recurrence
+from django.conf import settings
+import datetime
+import pytz
 
 from qatrack.accounts.tests.utils import create_group, create_user
 from qatrack.qa import models
@@ -295,13 +298,14 @@ def create_frequency(name=None, slug=None, interval=1, window_end=1, save=True):
         slug = name
 
     rule = recurrence.Rule(freq=recurrence.DAILY, interval=interval)
+    tz = settings.TIME_ZONE
 
     f = models.Frequency(
         name=name,
         slug=slug,
         recurrences=recurrence.Recurrence(
             rrules=[rule],
-            dtstart=timezone.get_current_timezone().localize(timezone.datetime(2012, 1, 1)),
+            dtstart=pytz.timezone(tz).localize(datetime.datetime(2012, 1, 1)),
         ),
         window_start=None,
         window_end=window_end,
