@@ -74,13 +74,31 @@
 {
     "model": "units.modality",
     "fields": {
+        "name": "16MeV Electron"
+    }
+},
+{
+    "model": "units.modality",
+    "fields": {
         "name": "17MeV Electron"
     }
 },
 {
     "model": "units.modality",
     "fields": {
+        "name": "20MeV Electron"
+    }
+},
+{
+    "model": "units.modality",
+    "fields": {
         "name": "Ir192 HDR"
+    }
+},
+{
+    "model": "units.modality",
+    "fields": {
+        "name": "80kV Photon"
     }
 },
 {
@@ -104,7 +122,19 @@
 {
     "model": "units.modality",
     "fields": {
+        "name": "160kV Photon"
+    }
+},
+{
+    "model": "units.modality",
+    "fields": {
         "name": "200kV Photon"
+    }
+},
+{
+    "model": "units.modality",
+    "fields": {
+        "name": "220kV Photon"
     }
 },
 {

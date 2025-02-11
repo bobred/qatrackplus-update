@@ -219,5 +219,18 @@
         "name": "Oncor",
         "model": null
     }
+},
+{
+    "model": "units.unittype",
+    "fields": {
+        "vendor": [
+            "Xstrahl"
+        ],
+        "unit_class": [
+            "Orthovoltage"
+        ],
+        "name": "Xstrahl",
+        "model": null
+    }
 }
 ]

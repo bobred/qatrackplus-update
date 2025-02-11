@@ -96,5 +96,19 @@
         "name": "Pantak",
         "notes": ""
     }
+},
+{
+    "model": "units.vendor",
+    "fields": {
+        "name": "Vision RT",
+        "notes": ""
+    }
+},
+{
+    "model": "units.vendor",
+    "fields": {
+        "name": "Xstrahl",
+        "notes": ""
+    }
 }
 ]
